@@ -25,7 +25,7 @@ git reset HEAD file             --可以把暂存区的修改撤销掉（unstage
 git rm file			--删掉文件 配合 并且git commit
 git commit -m ""
 
-git remote add origingupao git@github.com:fgy201703/gopaogit.git 
+git remote add origingupao git@github.com:xxxx/gopaogit.git 
                              --将本地与服务器上的目录关联起来
 
 git push -u origin master    --第一次提交
