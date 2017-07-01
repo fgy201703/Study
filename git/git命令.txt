@@ -62,5 +62,9 @@ git branch -d <name>       删除分支：
 =====================解决冲突==============================
 git log --graph            命令可以看到分支合并图
 
+git log --graph --pretty=oneline --abbrev-commit
+                           查看分支的合并情况 通过log 带参数
 
-git test
+git checkout               切换分支配合使用
+
+
