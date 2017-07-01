@@ -47,6 +47,9 @@ git init     执行git init命令
 
 Git branch   现在本机上有个本地仓库
 
+=====================创建分支==============================
+ git checkout -b dev    创建一个dev分支
+ git branch             配合上面命令使用  查看当前是在哪个分支上  注明 * dev 即在dev上
 
 
 
