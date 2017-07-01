@@ -48,8 +48,18 @@ git init     执行git init命令
 Git branch   现在本机上有个本地仓库
 
 =====================创建分支==============================
- git checkout -b dev    创建一个dev分支
- git branch             配合上面命令使用  查看当前是在哪个分支上  注明 * dev 即在dev上
+git checkout -b dev        创建一个dev分支
+git branch                 配合上面命令使用  查看当前是在哪个分支上  注明 * dev 即在dev上
 
+
+git branch                 查看分支
+git branch <name>          创建分支：
+git checkout <name>        切换分支：
+git checkout -b <name>     创建+切换分支：
+git merge <name>           合并某分支到当前分支：
+git branch -d <name>       删除分支：
+
+=====================解决冲突==============================
+git log --graph            命令可以看到分支合并图
 
 
