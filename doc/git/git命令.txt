@@ -1,0 +1,70 @@
+总结命令：
+
+添加
+git add testone.txt             --将文件添加到git中
+git commit -m "内容修改说明"    --提交并添加备注
+
+git log                         --查看日志
+git log --pretty=oneline        --查看精简日志  
+
+git rfflog			--查看所有操作记录
+git reset --hard^		--回退上一个版本
+git reset --hard 00001          --回退到指定的版本上 
+                                  说明：000001为版本号  可以通过git log 来查看
+
+git diff HEAD -- testone.txt    --命令可以查看工作区和版本库里面最新版本的区别
+				说明： -- 文件名   中间要有空格
+
+git status			--查看文件修改内容 状态  查看需要提交到服务器的文件
+cat testone.txt			--查看文件内容
+
+git checkout -- file            --可以丢弃工作区的修改 说明： -- 文件名   中间要有空格
+
+git reset HEAD file             --可以把暂存区的修改撤销掉（unstage），重新放回工作区
+                                  即此种情况是 已经完成git add 还没有提交时可以回退
+git rm file			--删掉文件 配合 并且git commit
+git commit -m "提交说明"
+
+git remote add origingupao git@github.com:xxxx/gopaogit.git 
+                             --将本地与服务器上的目录关联起来
+
+git push -u origin master    --第一次提交
+
+git push -u origin dev -- 第一次即提交到dev 分支上
+后续可以用 git push origin dev 即可  master同理
+
+把本地库的内容推送到远程，用git push命令，实际上是把当前分支master推送到远程。
+
+由于远程库是空的，我们第一次推送master分支时，加上了-u参数，
+Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，
+在以后的推送或者拉取时就可以简化命令
+
+
+rm -rf xxx   删除本地无用的仓库
+rm -rf .git  删除.git
+ls -a        在本地目录下找到.git文件
+git init     执行git init命令
+
+Git branch   现在本机上有个本地仓库
+
+=====================创建分支==============================
+git checkout -b dev        创建一个dev分支
+git branch                 配合上面命令使用  查看当前是在哪个分支上  注明 * dev 即在dev上
+
+
+git branch                 查看分支
+git branch <name>          创建分支：
+git checkout <name>        切换分支：
+git checkout -b <name>     创建+切换分支：
+git merge <name>           合并某分支到当前分支：
+git branch -d <name>       删除分支：
+
+=====================解决冲突==============================
+git log --graph            命令可以看到分支合并图
+
+git log --graph --pretty=oneline --abbrev-commit
+                           查看分支的合并情况 通过log 带参数
+
+git checkout               切换分支配合使用
+
+
