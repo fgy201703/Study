@@ -1,4 +1,4 @@
-##git问题解决
+## git问题解决
 
 ###==问题1==git error: failed to push some refs to 'git@github.com:
 
@@ -19,7 +19,7 @@ OK
 
 ###==问题2==  提示出错信息：fatal: remote origin already exists
 
- 如果输入$ git remote add origin [git@github.com:djqiang（github帐号名）/gitdemo（项目名）.git](mailto:git@github.com:djqiang/gitdemo.git) 
+ 如果输入$ git remote add origin [git@github.com:myproject（github帐号名）/gitdemo（项目名）.git](mailto:git@github.com:demo/gitdemo.git) 
 
   提示出错信息：fatal: remote origin already exists.
 
@@ -27,11 +27,13 @@ OK
 
   1、先输入$ git remote rm origin
 
-  2、再输入$ git remote add origin [git@github.com:djqiang/gitdemo.git](mailto:git@github.com:djqiang/gitdemo.git) 就不会报错了！
+  2、再输入$ git remote add origin [git@github.com:demo/gitdemo.git](mailto:git@github.com:demo/gitdemo.git) 就不会报错了！
 
   3、如果输入$ git remote rm origin 还是报错的话，error: Could not remove config section 'remote.origin'. 我们需要修改gitconfig文件的内容
 
-  4、找到你的github的安装路径，我的是C:\Users\ASUS\AppData\Local\GitHub\PortableGit_ca477551eeb4aea0e4ae9fcd3358bd96720bb5c8\etc
+  4、找到你的github的安装路径，我的是D:\tooles\codemanage\Git\mingw64\etc
+
+​       D:\tooles\codemanage\Git\mingw64   可以看一下上层目录中有相关的git的启动和配置信息
 
   5、找到一个名为gitconfig的文件，打开它把里面的`[remote "origin"]那一行`删掉就好了！
 
@@ -61,7 +63,7 @@ OK
 
   3、如果出现报错 fatal: Couldn't find remote ref master或者fatal: 'origin' does not appear to be a git repository以及fatal: Could not read from remote repository.
 
-  4、则需要重新输入$ git remote add origin [git@github.com:djqiang/gitdemo.git](mailto:git@github.com:djqiang/gitdemo.git)
+  4、则需要重新输入$ git remote add origin [git@github.com:demo/gitdemo.git](mailto:git@github.com:demo/gitdemo.git)
 
  
 
@@ -73,12 +75,10 @@ OK
   $ touch README
   $ git add README        //更新README文件
   $ git commit -m 'first commit'     //提交更新，并注释信息“first commit” 
-  $ git remote add origin [git@github.com:defnngj/hello-world.git](mailto:git@github.com:defnngj/hello-world.git)     //连接远程github项目  
+  $ git remote add origin [git@github.com:demo/hello-world.git](mailto:git@github.com:demo/hello-world.git)     //连接远程github项目  
   $ git push -u origin master     //将本地项目更新到github项目上去
 
-
-
- ###==问题6== gitconfig配置文件
+###==问题6== gitconfig配置文件
 
 ​       Git有一个工具被称为git config，它允许你获得和设置配置变量；这些变量可以控制Git的外观和操作的各个方面。这些变量可以被存储在三个不同的位置： 
 ​       1./etc/gitconfig 文件：包含了适用于系统所有用户和所有库的值。如果你传递参数选项’--system’ 给 git config，它将明确的读和写这个文件。 
@@ -94,7 +94,7 @@ OK
 
 　　$ git config --global user.name "John Doe"
 
-　　$ git config --global user.email [johndoe@example.com](mailto:johndoe@example.com)
+　　$ git config --global user.email [demo@example.com](mailto:demo@example.com)
 
 ### 2.2    你的编辑器(Your Editor)
 
