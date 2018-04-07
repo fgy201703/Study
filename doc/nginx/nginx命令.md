@@ -18,3 +18,5 @@ nginx [-?hvVtq] [-s signal] [-c filename] [-p prefix] [-g directives]
 -g directives   : 设置配置文件外的全局指令
 ```
 
+
+
