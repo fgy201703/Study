@@ -74,7 +74,7 @@
 
 * chown yfg  kk.txt   将文件所有者修改为用户yfg
 
-  ![1522914694977](C:\Users\user\AppData\Local\Temp\1522914694977.png)
+  ​
 
   ​
 
@@ -91,7 +91,7 @@
 
   dmesg | grep eth0                      查找网卡的启动信息
 
-  ![1522916294021](C:\Users\user\AppData\Local\Temp\1522916294021.png)
+  ​
 
   man bash | col -b  > bash.txt    将 man bash 信息中过滤掉所有的控制字符，包括RLF和HRLF；写入                          到 bash.txt文件中 
 
@@ -104,5 +104,3 @@
 * 命令替换    向所有用户发送信息命令：  wall date    命令替换
 
          wall   aaaa
-
-     ​
