@@ -14,7 +14,7 @@
 
 >  1，log.dirs=/opt/zkinfo/kafkainfo/kafka-logs  
 
-###设置zookeeper 服务器及端口
+### 设置zookeeper 服务器及端口
 
 >   2，zookeeper.connect=192.168.58.130:2181,192.168.58.131:2181,192.168.58.132:2181 
 
